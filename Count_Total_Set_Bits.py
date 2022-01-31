@@ -13,5 +13,9 @@ def solve_1(A):
 
 	return ans
 
-def solve( A):
-    return int(solve_1(A)%1000000007)
+def solve(A):
+  return int(solve_1(A)%1000000007)
+
+
+inp = int(input())
+solve(A)
