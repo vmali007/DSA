@@ -25,8 +25,24 @@ public:
     return end;    
     
     }
+
+    double moreprecision(int n, int tempsolution,int precision){
+        double factor  = 1;
+        double ans = tempsolution;
+
+        for(int i =0 ; i<precision;i++){
+            factor = factor/10;
+
+            for(double j = ans;j*j < n;j+factor){
+                ans = j;
+            }
+        }
+        return ans;
+    }
     
     int mySqrt(int x) {
-        return BinarySearch(x);
+        int tempsolution =  BinarySearch(x);
+
+
     }
 };
